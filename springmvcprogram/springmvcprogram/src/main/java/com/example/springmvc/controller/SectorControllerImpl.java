@@ -106,4 +106,13 @@ public ModelAndView editCompany(HttpServletRequest request, ModelMap map, HttpSe
               return mav;
        
 }
+@RequestMapping("/sectorDelete")
+public String deleteSector(@RequestParam("sector_id") int sector_id, ModelMap map, HttpServletRequest request,
+        @ModelAttribute("sec") Sector sector,HttpSession session) throws ClassNotFoundException, SQLException {
+ ModelAndView mav = null;
+ sector = sectorService.fetchStockUpdate(sector_id);
+ sectorService.deleteSector(sector);
+ //mav = new ModelAndView("updateCompany");
+return "userLandingPage";
+}
 }

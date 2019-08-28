@@ -44,4 +44,11 @@ private SectorDao sectorDao;
 		
 	}
 
+	@Override
+	public void deleteSector(Sector sector) {
+		// TODO Auto-generated method stub
+		sectorDao.delete(sector);
+		
+	}
+
 }

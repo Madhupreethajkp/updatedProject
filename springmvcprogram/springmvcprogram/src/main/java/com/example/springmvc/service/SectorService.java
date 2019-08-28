@@ -11,4 +11,5 @@ public Sector insertSector(Sector sector);
 public List<Sector> getSectorList() throws SQLException;
 public Sector fetchStockUpdate(int id);
 public void editStock(Sector sector);
+public void deleteSector(Sector sector);
 }

@@ -96,6 +96,7 @@ font-size : 22px;
     <th>Sector Name</th> 
     <th>Brief</th>
     <th>Edit</th>
+    <th>Delete</th>
   
   </tr>  
                <%
@@ -113,6 +114,7 @@ font-size : 22px;
     <td><%= s. getSector_name()%></td>
     <td><%= s. getBrief()%></td>
    <td><a href="sectorUpdate?sector_id=<%= s.getSector_id() %>" class="btn btn-info btn-lg">Edit</a></td>
+    <td><a href="sectorDelete?sector_id=<%= s.getSector_id() %>" class="btn btn-info btn-lg">Delete</a></td>
   </tr>
       <%  } %>
   <tr>
